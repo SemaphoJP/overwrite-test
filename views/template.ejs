@@ -1,0 +1,30 @@
+<body>
+    <div class="main">
+        <div class="jumbotron text-center">
+            <h1>Overwrite</h1>
+            <p class="text-muted">
+                <s>信頼 <b>＝</b> フォロワー数<br></s>
+                届ける言葉はバズらなくていい。
+            </p>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center mr-0 ml-0">
+        <div class="col-md-6">
+            <p><b><%= title  %></b></p>
+            <p>想定する相手との関係性: <br><%= type %></p>
+            <p>※使用方法<br>
+                宛先やご自身の名前など、変更が必要な箇所を上書きしてください。<br>
+                上書きを終えましたら、コピー&ペーストで使用可能です。<br>
+                本サービスはあくまで補助としてご利用ください。<br>
+                作成後、改めてご自身で間違いがないかご確認ください。
+            </p>
+        
+            <p><a href="overwrite" class="btn btn-outline-success">戻る</a><span id="copyBtn" class="btn btn-outline-success ml-3">クリップボードにコピー</span></p>
+            <form class="form-group w-md-80" action="">
+                <textarea id="textarea" class="form-control" name="" id="" rows="15" cols=""><%= textTemp  %> </textarea>
+            </form>
+        </div>
+    </div>
+    <script src="/public/js/static.js"></script>
+</body>
